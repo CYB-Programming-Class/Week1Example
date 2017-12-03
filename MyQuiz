@@ -1,0 +1,10 @@
+
+def main():
+    myInput = input("What is your favorite color? \nA. blue \nB. red \nC. yellow ")
+    if myInput.lower() not in ('a', 'b', 'c'):
+        print("invalid input! Please try again.")
+        main()
+    else:
+        print("You said: " + myInput)
+
+main()
